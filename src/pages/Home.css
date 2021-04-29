@@ -1,0 +1,38 @@
+.banner{
+    margin-bottom:50px;
+   
+}
+.bannerimage{
+    position:absolute;   
+
+    width: 100%;
+    height: 400px;
+}
+
+.banner-button{
+    color:white;
+}
+
+.bannertext{
+    position:relative;
+    top: 100px;
+    height: 400px;
+    text-align:center;
+    color:white;
+}
+
+.banner-h1{
+    color:white;
+    text-shadow:4px 4px 100px black;
+}
+
+.banner-p{
+    font-size: 18px;
+    text-shadow:2px 2px 100px black;
+}
+
+.section{
+    width:80%;
+    margin:0 auto;
+    margin-bottom:50px;
+}
