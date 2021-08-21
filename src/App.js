@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom"
+import { HashRouter, Link, Route, Switch } from "react-router-dom"
 //data
 import products from './data.js'
 
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
 
       <Layout>
-        <BrowserRouter>
+        <HashRouter>
           <Header style={{ backgroundColor: "white", display: "flex", justifyContent: "space-between" }}>
 
             <div className="logo" ><h1>eCommerceFILTER</h1></div>
@@ -43,6 +43,7 @@ function App() {
 
 
           </Header>
+          
           <Switch>
             <Route exact path="/">
               <Home />
@@ -61,7 +62,7 @@ function App() {
           <Footer/>
           
     
-        </BrowserRouter>
+        </HashRouter>
       </Layout>
     </div>
   );

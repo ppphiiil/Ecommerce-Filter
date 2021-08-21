@@ -123,22 +123,26 @@ export default function FilterPage(props) {
         </div>
 
 
-            <Layout style={{ padding: "20px", backgroundColor: "#F2F2F8" }}>
-
-                <Sider theme="light" style={{ marginRight: "30px", backgroundColor: "#EFEFF6" }}>
+            <Layout  style={{ padding: "20px", backgroundColor: "#F2F2F8" }}>
+            <div style={{width:"100%",display:"flex",flexDirection:"row", flexWrap:"wrap"}}>
+<div >
+                <Sider  theme="light" style={{marginRight: "30px", backgroundColor: "#EFEFF6" }}>
                     <Filter  
                     onChangeFilterSize={onChangeFilterSize} 
                     onChangeFilterColor={onChangeFilterColor}             
                     onChangeTestCheckbox={onChangeTestCheckbox}
                     checked={checked} />
                 </Sider>
-
+</div>
+<div  >
                 <Content>
                     <ActiveFilter setChecked={setChecked} TestCheckboxName={TestCheckboxName} checked={checked} dataFilterSize={dataFilterSize} setDataFilterSize={setDataFilterSize}/>
                     <SearchResult filteredData={filteredData} />
                 </Content>
-
+</div>
+</div>
             </Layout>
+
         </div>
     )
 }
